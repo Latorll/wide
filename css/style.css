@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+$cl: (
+    white:#fff,
+    black:#000,
+);
+
+@function cl($key) {
+    @return map-get(cl, $key);
+}
+
+@mixin overTab {
+    @media screen and (min-width: (778px)) {
+        @content;
+    }
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'ヒラギノ明朝Pro', serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+p{
+    font-size: 81px;
+    text-align: center;
+}
